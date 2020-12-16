@@ -1,6 +1,8 @@
 import { CardType } from './card-type.enum';
 
 const CARD_TYPES: Map<string, RegExp> = new Map();
+CARD_TYPES.set(CardType.ELO, new RegExp('^((((636368)|(438935)|(504175)|(451416)|(636297))\d{0,10})|((5067)|(4576)|(4011))\d{0,12})$'));
+CARD_TYPES.set(CardType.HIPERCARD, new RegExp('^(606282\d{10}(\d{3})?)|(3841\d{15})$'));
 CARD_TYPES.set(CardType.AMERICAN_EXPRESS, new RegExp('^3[47]'));
 CARD_TYPES.set(CardType.DINERS, new RegExp('^36'));
 CARD_TYPES.set(CardType.DINERS_CARTE_BLANCHE, new RegExp('^30[0-5]'));
