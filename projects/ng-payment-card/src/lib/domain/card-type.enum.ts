@@ -10,4 +10,6 @@ export enum CardType {
   MASTERCARD = 'Mastercard',
   VISA_ELECTRON = 'Visa Electron',
   VISA = 'VISA',
+  HIPERCARD = 'Hipercard',
+  ELO = 'Elo'
 }
